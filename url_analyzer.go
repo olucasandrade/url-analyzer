@@ -1,4 +1,4 @@
-package urlanalyzer
+package url_analyzer
 
 import (
 	"github.com/olucasandrade/url-analyzer/models"
