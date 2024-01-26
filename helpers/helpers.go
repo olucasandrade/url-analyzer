@@ -6,7 +6,7 @@ import (
 )
 
 func ConvertPageSizeToMB(pageSize int) string {
-	return fmt.Sprintf("%.4fMB", float64(pageSize)/(1024*1024))
+	return fmt.Sprintf("%vMB", pageSize)
 }
 
 func HasHTTPPrefix(url string) bool {
