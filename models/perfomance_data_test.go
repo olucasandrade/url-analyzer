@@ -10,7 +10,7 @@ import (
 func TestPerfomanceData(t *testing.T) {
 	load_time := "3s"
 	http_requests_count := 2
-	page_size := "10MB"
+	page_size := 200
 
 
 	perf_data := &models.PerformanceData{
