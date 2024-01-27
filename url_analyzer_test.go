@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestServiceReturnsDataSuccessfully(t *testing.T) {
+func TestPackageAnalyzeURLSuccessfully(t *testing.T) {
 	response, err := url_analyzer.Analyze("criaway.com")
 	assert.NotEmpty(t, response.HTTPRequestsCount)
 	assert.NotEmpty(t, response.LoadTime)
