@@ -2,7 +2,6 @@ package services
 
 import (
 	"errors"
-	"fmt"
 	"net/http"
 	"time"
 
@@ -40,7 +39,7 @@ func (as *AnalyzerService) AnalyzeURL(url string) (*models.PerformanceData, erro
 		return nil, err
 	}
 
-	loadTime := fmt.Sprintf("%.2fs", time.Since(startTime).Seconds())
+	loadTime := time.Since(startTime).String()
 
 	httpRequestsCount := doc.Find("a[href], img, script, link[rel='stylesheet']").Length()
 
