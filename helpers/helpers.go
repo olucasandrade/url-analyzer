@@ -5,10 +5,6 @@ import (
 	"regexp"
 )
 
-func ConvertPageSizeToMB(pageSize int) string {
-	return fmt.Sprintf("%vMB", pageSize)
-}
-
 func HasHTTPPrefix(url string) bool {
 	return len(url) >= 7 && (url[:7] == "http://" || url[:8] == "https://")
 }
