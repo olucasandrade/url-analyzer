@@ -44,7 +44,7 @@ func (as *AnalyzerService) AnalyzeURL(url string) (*models.PerformanceData, erro
 
 	httpRequestsCount := doc.Find("a[href], img, script, link[rel='stylesheet']").Length()
 
-	pageSize := helpers.ConvertPageSizeToMB(len([]byte(doc.Text())))
+	pageSize := len([]byte(doc.Text()))
 
 	return &models.PerformanceData{
 		LoadTime:          loadTime,
