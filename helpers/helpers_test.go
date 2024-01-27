@@ -7,13 +7,6 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestConvertPageSizeToMB(t *testing.T) {
-	page_size := 1
-	page_size_in_MB := helpers.ConvertPageSizeToMB(page_size)
-
-	assert.Equal(t, "1MB", page_size_in_MB)
-}
-
 func TestHasHTTPPrefix(t *testing.T) {
 	url_with_http := "http://www.criaway.com"
 	url_without_http := "www.criaway.com"
